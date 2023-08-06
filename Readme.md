@@ -2,5 +2,5 @@
 
     dokcer login
     docker build -t yavtech/miniserver .
-    dokcer push 
+    docker push yavtech/miniserver
     docker run -v $(pwd)/static:/wwwroot -p 3030:8000 miniserver
