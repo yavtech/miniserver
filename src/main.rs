@@ -18,7 +18,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(move || {
         App::new().service(fs::Files::new("/", path.as_str()).index_file("index.html"))
     })
-    .bind(("0.0.0.0", 8080))?
+    .bind(("0.0.0.0", 8000))?
     .run()
     .await
 }
